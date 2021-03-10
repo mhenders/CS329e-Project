@@ -50,11 +50,19 @@
   height: 100px;
 }
 
-p {
+#desc {
   color: black;
   font-family: "Monoco", monospace;
   text-align: center;
 }
+
+#next {
+  color: #f7943e;
+  font-family: "Monoco", monospace;
+  text-align: center;
+  font-size: 25px;
+}
+
 
 body {
   background-color: #ffedb8;
