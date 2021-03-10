@@ -1,0 +1,46 @@
+/* Add background color to navigation bar */
+.NaviBar {
+  background-color: #f7943e;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style the text links inside the navigation bar */
+.NaviBar a {
+
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 20px;
+
+  float: left;
+}
+
+/* Change the color of links on hover to orange*/
+.NaviBar a:hover {
+  background-color: #F5A965;
+  color: black;
+}
+
+
+/* Right-aligned section of navigation */
+.NaviBar-right {
+  float: right;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+p {
+  color: black;
+  font-family: "Monoco", monospace;
+  text-align: center;
+}
+
+body {
+  background-color: #ffedb8;
+}
