@@ -1,15 +1,14 @@
 #countDown{
-    position:   absolute;
-    top:        10px;
-    left:       10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
     text-align: left;
 }
 
 /* Add background color to navigation bar */
 .NaviBar {
   background-color: #f7943e;
-  overflow: hidden;
-  height: 65px;
+  height: 70px;
   margin-top: 50px;
 
 }
@@ -26,7 +25,7 @@
 /* Style the text links inside the navigation bar */
 .NaviBar a {
   color: #f2f2f2;
-  padding: 14px;
+  padding: 14px 28px;
   text-decoration: none;
   font-size: 20px;
   float: left;
@@ -34,9 +33,9 @@
   text-align: center;
 }
 
-/* Change the color of links on hover to orange*/
+/* Change the color of links on hover to red*/
 .NaviBar a.pastlineups:hover {
-  background-color: #F5A965;
+  background-color: #f27872;
   color: black;
 }
 /* Change the color of links on hover to green*/
