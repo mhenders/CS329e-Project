@@ -1,21 +1,37 @@
+#countDown{
+    position:   absolute;
+    top:        10px;
+    left:       10px;
+    text-align: left;
+}
+
 /* Add background color to navigation bar */
 .NaviBar {
   background-color: #f7943e;
   overflow: hidden;
-  align-items: center;
-  text-align: center;
-}
+  height: 65px;
+  margin-top: 50px;
 
+}
+/* Makes navbar scroll with page */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + #desc {
+  padding-top: 60px;
+}
 /* Style the text links inside the navigation bar */
 .NaviBar a {
-
   color: #f2f2f2;
-  text-align: center;
   padding: 14px;
   text-decoration: none;
   font-size: 20px;
-
   float: left;
+  align-items: center;
+  text-align: center;
 }
 
 /* Change the color of links on hover to orange*/
@@ -39,15 +55,17 @@
   color: black;
 }
 
-
 /* Right-aligned section of navigation */
 .NaviBar-right {
   float: right;
+  align-items: center;
+  text-align: center;
 }
 
 #logo {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 65px;
+  align-items: center;
 }
 
 #desc {
