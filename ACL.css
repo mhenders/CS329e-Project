@@ -87,6 +87,12 @@
   font-size: 25px;
 }
 
+#past {
+  color: #74c4b4;
+  font-family: "Monoco", monospace;
+  font-size: 20px;
+}
+
 
 body {
   background-color: #ffedb8;
