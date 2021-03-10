@@ -19,8 +19,23 @@
 }
 
 /* Change the color of links on hover to orange*/
-.NaviBar a:hover {
+.NaviBar a.pastlineups:hover {
   background-color: #F5A965;
+  color: black;
+}
+/* Change the color of links on hover to green*/
+.NaviBar a.bites:hover {
+  background-color: #92dea7;
+  color: black;
+}
+/* Change the color of links on hover to blue*/
+.NaviBar a.MyACL:hover {
+  background-color: #92cede;
+  color: black;
+}
+/* Change the color of links on hover to pink*/
+.NaviBar a.contact:hover {
+  background-color: #f5a4ed;
   color: black;
 }
 
