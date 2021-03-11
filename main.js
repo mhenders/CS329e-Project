@@ -6,7 +6,7 @@ var x = setInterval(function() {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("countDown").innerHTML = "<b style='font-size:110%;'>2021 ACL Count Down: </b>" + days + " Days " + hours + " Hours "
+    document.getElementById("countDown").innerHTML = "<b style='font-size:120%;'>2021 ACL Count Down: </b>" + days + " Days " + hours + " Hours "
     + minutes + " Minutes " + seconds + " Seconds";
     if (distance < 0) {
     clearInterval(x);

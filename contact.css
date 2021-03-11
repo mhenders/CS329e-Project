@@ -1,136 +1,41 @@
 h1{
-    color:rgb(218, 65, 19);
-    font-size:50px;
-    text-align:center;
-    font-family: 'Bebas Neue';
-    margin:0 auto;
-    width:500px;
+  color:rgb(218, 65, 19);
+  font-size:50px;
+  text-align:center;
+  font-family: sans-serif;
+  margin:0 auto;
+  width:500px;
 }
 h2{
-    color:rgb(218, 65, 19);
-    font-size:30px;
-    text-align:center;
-    font-family: 'Bebas Neue';
-    margin:0 auto;
-    width:1200px;
+  color:rgb(218, 65, 19);
+  font-size:30px;
+  text-align:center;
+  font-family: sans-serif;
+  margin:0 auto;
+  width:1200px;
 }
 
 .cont{
-    background-color:rgb(14, 151, 128);
-    color:whitesmoke;
-    width: 300px;
-    height: 200px;
-    text-align: center;
-    font-family: Arial;
-    font-size:20px;
+  background-color:rgb(14, 151, 128);
+  color:whitesmoke;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  font-family: Arial;
+  font-size:20px;
 }
 
 #call{
-    float:right;
+  float:right;
+  margin: 100px;
 }
 
 
 #email{
-    float:left;
+  float:left;
 }
 
 #under{
-    text-decoration: underline;
-    color: whitesmoke;
-}
-
-#countDown{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    text-align: left;
-}
-
-/* Add background color to navigation bar */
-.NaviBar {
-  background-color: #f7943e;
-  height: 70px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-
-}
-/* Makes navbar scroll with page */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + #desc {
-  padding-top: 60px;
-}
-/* Style the text links inside the navigation bar */
-.NaviBar a {
-  color: #f2f2f2;
-  padding: 14px 28px;
-  text-decoration: none;
-  font-size: 20px;
-  float: left;
-  align-items: center;
-  text-align: center;
-}
-
-/* Change the color of links on hover to red*/
-.NaviBar a.pastlineups:hover {
-  background-color: #f27872;
-  color: black;
-}
-/* Change the color of links on hover to green*/
-.NaviBar a.bites:hover {
-  background-color: #92dea7;
-  color: black;
-}
-/* Change the color of links on hover to blue*/
-.NaviBar a.MyACL:hover {
-  background-color: #92cede;
-  color: black;
-}
-/* Change the color of links on hover to pink*/
-.NaviBar a.contact:hover {
-  background-color: #f5a4ed;
-  color: black;
-}
-
-/* Right-aligned section of navigation */
-.NaviBar-right {
-  float: right;
-  align-items: center;
-  text-align: center;
-}
-
-
-
-#logo {
-  width: 130px;
-  height: 65px;
-  display:block;
-  margin: auto;
-}
-
-#desc {
-  color: black;
-  font-family: "Monoco", monospace;
-  text-align: center;
-}
-
-#next {
-  color: #f7943e;
-  font-family: "Monoco", monospace;
-  text-align: center;
-  font-size: 25px;
-}
-
-
-body {
-  background-color: #ffedb8;
+  text-decoration: underline;
+  color: whitesmoke;
 }
