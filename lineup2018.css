@@ -127,3 +127,14 @@ background-color: #ffedb8;
     background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
 }
 
+table {
+    top : 25%;
+    font-family: Arial;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 12pt;
+    color: black;
+}
