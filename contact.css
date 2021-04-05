@@ -39,3 +39,40 @@ h2{
   text-decoration: underline;
   color: whitesmoke;
 }
+
+
+h3 {
+  color:rgb(218, 65, 19);
+  font-size:20px;
+  text-align:center;
+  font-family: sans-serif;
+  margin:0 auto;
+  width:1200px;
+}
+
+.cont{
+  background-color:rgb(14, 151, 128);
+  color:whitesmoke;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  font-family: Arial;
+  font-size:20px;
+  margin: 0 auto;
+}
+
+#email{
+  text-align: center;
+}
+
+#under{
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+.table {
+        text-align:center;
+        margin: 0 auto;
+        color: rgb(218, 65, 19);
+}
+
