@@ -24,13 +24,24 @@ print <<<PAGE1
 
 <body>
   <div id="countDown"></div>
+  <p id = "con">
+  <a href="contact.html">Contact Us</a>
+  </p>
 
   <!-- Navigation Bar -->
   <div class="NaviBar">
       
-    <!-- Left Links -->
-    <a class = 'pastlineups' href="placeholder.html">Past Line Ups</a>
-    
+  <!-- Left Links -->
+  <div class="dropdown">
+    <button class="dropbtn">Past Line Ups</button>
+    <div class="dropdown-content">
+     <a href="artists_19.php"> 2019 </a>
+     <a href="artists_18.php"> 2018 </a>
+     <a href="artists_17.php"> 2017 </a>
+     <a href="artists_16.php"> 2016 </a>
+    </div>
+  </div>    
+  
     <!-- Centered logo -->
     <div class="NaviBar-logo">
     <a href="ACL.html"><img id='logo' src="logo.png"></a>
