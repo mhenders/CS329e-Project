@@ -132,15 +132,3 @@
       background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
   }
 
-button {
-    background-color: #ffedb8;
-    font-size: 16pt;
-    text-decoration: none;
-    
-}
-
-/* Change the color of links on hover to blue*/
-button:hover {
-background-color: #92cede;
-color: white;
-}

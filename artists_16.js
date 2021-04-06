@@ -54,16 +54,17 @@ function artistPage(id){
     str1 = "https://www.youtube.com/results?search_query="
     str1 = str1.concat(artist_list[0])
 
-   
+    
 
     for(i = 1;i < artist_list.length;i++){
         str2 = "+".concat(artist_list[i])
         str1 = str1.concat(str2)
     }
-    str3 =  "+acl+2019"
+    str3 =  "+acl+2016"
     str = str1.concat(str3)
 
     
 
     document.getElementById('vid').src = str;
 }
+
