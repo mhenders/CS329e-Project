@@ -32,31 +32,6 @@ function stickyScroll() {
   }
 }
 
-function assignNames()
-{
-    // Read in the text file containing artist names
-    file = "file://artists_19.txt"
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                // Here we split the text into an array of strings containing the artist names
-                var lines = allText.split("\n")
-                // Use for loop to assign each name of a tag
-                for(i = 0;i < 128;i++){
-                    document.getElementById(i.toString()).innerHTML = lines[i].toUpperCase()
-                }
-            }
-        }
-    }
-    rawFile.send(null);
-}
-
 function artistPage(id){
     // Get artist name for id
     artist_name = document.getElementById(id).innerHTML
