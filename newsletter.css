@@ -1,0 +1,62 @@
+#countDown{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add background color to navigation bar */
+.NaviBar {
+background-color: #f7943e;
+height: 70px;
+margin-top: 50px;
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+border: 2px solid black;
+}
+/* Makes navbar scroll with page */
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + #desc {
+padding-top: 60px;
+}
+/* Style the text links inside the navigation bar */
+.NaviBar a {
+color: #f2f2f2;
+padding: 14px 28px;
+text-decoration: none;
+font-size: 20px;
+float: left;
+align-items: center;
+text-align: center;
+}
+
+/* Change the color of links on hover to red*/
+.NaviBar a.pastlineups:hover {
+background-color: #f27872;
+color: black;
+}
+/* Change the color of links on hover to green*/
+.NaviBar a.bites:hover {
+background-color: #92dea7;
+color: black;
+}
+/* Change the color of links on hover to blue*/
+.NaviBar a.newsletter:hover {
+background-color: #92cede;
+color: black;
+}
+/* Change the color of links on hover to pink*/
+.NaviBar a.contact:hover {
+background-color: #f5a4ed;
+color: black;
+}
+
+        
