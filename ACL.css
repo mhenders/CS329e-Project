@@ -6,6 +6,16 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#con {
+        font-family: sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: right;
+        float: right;
+        margin: 0 1.5%;
+}
+
+
 /* Add background color to navigation bar */
 .NaviBar {
 background-color: #f7943e;
