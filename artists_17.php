@@ -1,46 +1,62 @@
-<!DOCTYPE html>
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+$script = $_SERVER['PHP_SELF'];
 
-<html lang="en">
+$art = explode("\n", file_get_contents('artists_19.txt'));
+
+print <<<PAGE1
+<html>
 
   <head>
     <title>ACL Wayback Machine</title>
     <meta charset="UTF-8">
     <meta name="description" content="ACL Wayback Machine">
     <meta name="author" content="Michael Holzem, Meg Henderson, Pedro Naranjo, Jibraan Siddiqi">
-    <link href="lineup2018.css" rel="stylesheet">
-    <script src="main.js"></script>
+    <link href="artists_17.css" rel="stylesheet">
+    <script src="artists_17.js"></script>
   </head>
 
-  <body>
-    <div id="countDown"></div>
-  
-    <!-- Navigation Bar -->
-    <div class="NaviBar">
-        
-      <!-- Left Links -->
-      <a class = 'pastlineups' href="placeholder.html">Past Line Ups</a>
-      <a class = 'bites' href="placeholder.html">Bites & Booze</a>
+<body>
+  <div id="countDown"></div>
+
+  <!-- Navigation Bar -->
+  <div class="NaviBar">
       
-      <!-- Centered logo -->
-      <div class="NaviBar-logo">
-        <a href="ACL.html"><img id='logo' src="logo.png"></a>
-      </div>
+    <!-- Left Links -->
+    <a class = 'pastlineups' href="placeholder.html">Past Line Ups</a>
+    
+    
+    <!-- Centered logo -->
+    <div class="NaviBar-logo">
+      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+    </div>
+    
+    <!-- Right Links -->
+    <div class="NaviBar-right">
+      <a class = 'MyACL' href="placeholder.html">MyACL</a>
       
-      <!-- Right Links -->
-      <div class="NaviBar-right">
-        <a class = 'MyACL' href="placeholder.html">MyACL</a>
-        <a class = 'contact' href="contact.html">Contact Us</a>
-      </div>
-  
     </div>
 
-    <?php 
-    $file = fopen ("artists_17.txt", "r");
-	  while (!feof($file)) {
-  		$line = fgets($file);
-			print("<a href='artistpage.html'>$line</a>");
-		} 
-    ?>
-  </body>
-</html>
+</div>
+PAGE1;
 
+$length = count($art);
+for ($x = 0;$x < $length;$x++) {
+    $new_id = strval($x + 1);
+    print <<<PAGE1
+    <button id=$new_id class="artist" onClick="artistPage(this.id);">$art[$x]</button>
+PAGE1;
+}
+
+print <<<PAGE1
+  <p id="name"></p>
+
+  <iframe id = "vid">
+  </iframe>
+
+  </body>
+  </html>
+PAGE1;
+?>

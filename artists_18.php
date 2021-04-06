@@ -26,7 +26,7 @@ print <<<PAGE1
       
     <!-- Left Links -->
     <a class = 'pastlineups' href="placeholder.html">Past Line Ups</a>
-    <a class = 'bites' href="placeholder.html">Bites & Booze</a>
+    
     
     <!-- Centered logo -->
     <div class="NaviBar-logo">
@@ -36,17 +36,17 @@ print <<<PAGE1
     <!-- Right Links -->
     <div class="NaviBar-right">
       <a class = 'MyACL' href="placeholder.html">MyACL</a>
-      <a class = 'contact' href="contact.html">Contact Us</a>
+     
     </div>
 
 </div>
 PAGE1;
 
 $length = count($art);
-for ($x = 0;$x < $length;$x++) {
+for ($x = 0;$x < 148;$x++) {
     $new_id = strval($x + 1);
     print <<<PAGE1
-    <button id=$new_id class="artist" onClick="artistPage(this.id);">$art[$x]</button>
+    <button id=$new_id name = "btn" class="artist" onClick="artistPage(this.id);">$art[$x]</button>
 PAGE1;
 }
 

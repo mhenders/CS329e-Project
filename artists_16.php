@@ -26,7 +26,7 @@ print <<<PAGE1
       
     <!-- Left Links -->
     <a class = 'pastlineups' href="placeholder.html">Past Line Ups</a>
-    <a class = 'bites' href="placeholder.html">Bites & Booze</a>
+    
     
     <!-- Centered logo -->
     <div class="NaviBar-logo">
@@ -36,7 +36,7 @@ print <<<PAGE1
     <!-- Right Links -->
     <div class="NaviBar-right">
       <a class = 'MyACL' href="placeholder.html">MyACL</a>
-      <a class = 'contact' href="contact.html">Contact Us</a>
+      
     </div>
 
 </div>
