@@ -36,26 +36,34 @@ function artistPage(id){
     // Get artist name for id
     artist_name = document.getElementById(id).innerHTML
 
+    alert(artist_name)
+
     // Delete all the artist names currently on the screen
-    for(i = 0;i < 128;i++){
+    for(i = 1;i < 129;i++){
         document.getElementById(i.toString()).innerHTML = ""
     }
 
     // Concatenate strings to create youtube URL to video
-    document.getElementById("name").innerHTML = artist_name
+    document.getElementById("name").innerHTML = artist_name.toUpperCase()
+
+    alert("here")
 
     // We have to split artist name into individual words so they have a "+" in between them
     artist_name = artist_name.toLowerCase()
     artist_list = artist_name.split(" ")
     str1 = "https://www.youtube.com/results?search_query="
     str1 = str1.concat(artist_list[0])
+
+    alert(str1)
+
     for(i = 1;i < artist_list.length;i++){
         str2 = "+".concat(artist_list[i])
         str1 = str1.concat(str2)
     }
     str3 =  "+acl+2019"
     str = str1.concat(str3)
-    video = document.createElement('video')
-    video.src = str.concat(".ogg");
-    video.autoplay = true
+
+    alert(str)
+
+    document.getElementById('vid').src = str;
 }

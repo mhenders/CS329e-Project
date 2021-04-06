@@ -46,12 +46,15 @@ $length = count($art);
 for ($x = 0;$x < $length;$x++) {
     $new_id = strval($x + 1);
     print <<<PAGE1
-    <button onClick = "artistPage(this.id);" class = "artist" id=$new_id>$art[$x]</button>
+    <button id=$new_id class="artist" onClick="artistPage(this.id);">$art[$x]</button>
 PAGE1;
 }
 
 print <<<PAGE1
   <p id="name"></p>
+
+  <iframe id = "vid">
+  </iframe>
 
   </body>
   </html>
