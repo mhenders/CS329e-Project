@@ -50,7 +50,6 @@ function artistPage(id){
     str3 =  "+acl+"
     str4 = str3.concat(year)
     str = str1.concat(str4)
-    alert(str);
     getVideo(str);
 }
 function getVideo(str) {
