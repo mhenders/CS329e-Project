@@ -87,7 +87,9 @@ PAGE1;
 print <<<PAGE1
  <p id="name"></p>
  <h3>Video Title</h3>
- <iframe src=""></iframe>
+ <div class = "vid">
+    <iframe src=""></iframe>
+ </div>
  <p class="description">Video description<p>
 
 
