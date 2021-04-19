@@ -24,6 +24,13 @@ h2{
   font-family: Arial;
   font-size:20px;
 }
+.cont2{
+  background-color:rgb(14, 151, 128);
+  color:whitesmoke;
+  text-align: center;
+  font-family: Arial;
+  font-size:20px;
+}
 
 #call{
   float:right;
@@ -31,9 +38,6 @@ h2{
 }
 
 
-#email{
-  float:left;
-}
 
 #under{
   text-decoration: underline;
@@ -64,6 +68,7 @@ h3 {
 #email{
   text-align: center;
 }
+
 
 /* Dropdown Button */
 .dropbtn {
@@ -122,5 +127,6 @@ h3 {
 .table {
         text-align:center;
         margin: 0 auto;
+        border: 2px solid rgb(218, 65, 19);
         color: rgb(218, 65, 19);
 }
