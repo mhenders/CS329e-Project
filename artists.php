@@ -63,7 +63,7 @@ print <<<PAGE1
     
     <!-- Right Links -->
     <div class="NaviBar-right">
-      <a class = 'newsletter' href="newsletter.html">Newsletter</a>
+      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
     </div>
 
    </div>
