@@ -35,6 +35,23 @@ function artistPage(id){
     str = str1.concat(str4)
     getVideo(str);
 }
+
+function searchBar(artist_name){
+    artist_name = artist_name.toLowerCase()
+    artist_list = artist_name.split(" ")
+    str1 = (artist_list[0])
+
+    for(i = 1;i < artist_list.length;i++){
+        str2 = "+".concat(artist_list[i])
+        str1 = str1.concat(str2)
+    }
+    year = document.getElementById("year").innerHTML
+    str3 =  "+acl+"
+    str4 = str3.concat(year)
+    str = str1.concat(str4)
+    getVideo(str);
+}
+
 function getVideo(str) {
       $.ajax({
         type: 'GET',
