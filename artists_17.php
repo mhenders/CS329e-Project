@@ -54,6 +54,14 @@ print <<<PAGE1
 
    </div>
 <h2 id="year">2017</h2>
+<div class="search-container">
+    <form action="">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+<br> <br><br>
+
 PAGE1;
 
 $length = count($art);
