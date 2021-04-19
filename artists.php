@@ -63,7 +63,7 @@ print <<<PAGE1
     
     <!-- Right Links -->
     <div class="NaviBar-right">
-      <a class = 'MyACL' href="placeholder.html">MyACL</a>
+      <a class = 'newsletter' href="newsletter.html">Newsletter</a>
     </div>
 
    </div>
