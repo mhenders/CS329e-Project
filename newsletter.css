@@ -59,6 +59,13 @@ background-color: #f5a4ed;
 color: black;
 }
 
+/* Right-aligned section of navigation */
+.NaviBar-right {
+float: right;
+align-items: center;
+text-align: center;
+}
+
 /* Dropdown Button */
 .dropbtn {
   background-color: #f7943e;
