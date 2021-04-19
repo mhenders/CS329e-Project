@@ -90,8 +90,8 @@ print <<<PAGE1
  <div class = "vid">
     <iframe src=""></iframe>
  </div>
- <p class="description">Video description<p>
-
+ <p><b> Video Description </b></p>
+ <p class="description">Video description goes here.</p>
 
  </body>
  </html>
