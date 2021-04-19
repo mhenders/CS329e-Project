@@ -37,6 +37,7 @@ function artistPage(id){
 }
 
 function searchBar(artist_name){
+    document.getElementById("name").innerHTML = artist_name.toUpperCase()
     artist_name = artist_name.toLowerCase()
     artist_list = artist_name.split(" ")
     str1 = (artist_list[0])
