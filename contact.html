@@ -26,13 +26,23 @@
    <div class="dropdown">
     <button class="dropbtn">Past Line Ups</button>
     <div class="dropdown-content">
-     <a href="artists_19.php"> 2019 </a>
-     <a href="artists_18.php"> 2018 </a>
-     <a href="artists_17.php"> 2017 </a>
-     <a href="artists_16.php"> 2016 </a>
-    </div>
+     <button onclick=year(this.innerHTML)>2019</a>
+     <button onclick=year(this.innerHTML)>2018</a>
+     <button onclick=year(this.innerHTML)>2017</a>
+     <button onclick=year(this.innerHTML)>2016</a>
    </div>
+  </div>
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
 
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
     <!-- Centered logo -->
     <div class="NaviBar-logo">
       <a href="ACL.html"><img id='logo' src="logo.png"></a>
