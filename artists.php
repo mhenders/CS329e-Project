@@ -70,12 +70,10 @@ print <<<PAGE1
 
 <h2 id="year">$year</h2>
 <div class="search-container">
-    <form action="">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit">Submit</button>
-    </form>
+      <input type="text" placeholder="Search.." id="search">
+      <button onclick=searchBar(document.getElementById('search').value)>Submit</button>
   </div>
-<br> <br><br>
+<br><br><br>
 PAGE1;
 
 $length = count($art);
