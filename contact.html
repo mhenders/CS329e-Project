@@ -23,37 +23,39 @@
   <div class="NaviBar">
 
     <!-- Left Links -->
-   <div class="dropdown">
-    <button class="dropbtn">Past Line Ups</button>
-    <div class="dropdown-content">
-     <button onclick=year(this.innerHTML)>2019</button>
-     <button onclick=year(this.innerHTML)>2018</button>
-     <button onclick=year(this.innerHTML)>2017</button>
-     <button onclick=year(this.innerHTML)>2016</button>
-   </div>
-  </div>
-  <form type='hidden' method='POST' action='artists.php' name='theForm'>
-    <input type='hidden' id='year' name="year" value=''>
-  </form>
-
-  <script>
-  function year(words){
-    console.log(words);
-    document.getElementById('year').value = words;
-    document.theForm.submit();
-  }
-  </script>
-    <!-- Centered logo -->
-    <div class="NaviBar-logo">
-      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+    <div class="dropdown">
+     <button class="dropbtn">Past Line Ups</button>
+     <div class="dropdown-content">
+       <button onclick=year(this.innerHTML)>2019</button>
+       <button onclick=year(this.innerHTML)>2018</button>
+       <button onclick=year(this.innerHTML)>2017</button>
+       <button onclick=year(this.innerHTML)>2016</button>
+     </div>
     </div>
-
-    <!-- Right Links -->
-    <div class="NaviBar-right">
-      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
-    </div>
-
-  </div>
+    <form type='hidden' method='POST' action='artists.php' name='theForm'>
+      <input type='hidden' id='year' name="year" value=''>
+    </form>
+    
+    <script>
+    function year(words){
+      console.log(words);
+      document.getElementById('year').value = words;
+      document.theForm.submit();
+    }
+    </script>
+  
+      <!-- Centered logo -->
+      <div class="NaviBar-logo">
+        <a href="ACL.html"><img id='logo' src="logo.png"></a>
+      </div>
+  
+      <!-- Right Links -->
+      <div class="NaviBar-right">
+        <a class = 'MyACL' href="myacl.php">MyACL</a>
+        <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+      </div>
+  
+      </div>
 
     <div>
         <h1>CONTACT US!</h1>
