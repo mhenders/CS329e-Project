@@ -130,14 +130,17 @@ print <<<PAGE1
 <td> Enter password </td>
 <td> <input type = "text" name = "password1" size = "30" /></td>
 </tr>
+<tr>
+<td><input type = "submit" value = "Submit" /></td>
+<td><input type = "reset" value = "Reset" /></td>
+</tr>
+</form>
+</table>
 <center>
-<tr>
-<td colspan='2' class='subheading'>New to MyACL? Create an account!</td>
-</tr>
+<h2> New to MyACL? Create an Account! </h2>
 </center>
-<tr>
-<td> &nbsp; </td> <td> &nbsp; </td>
-</tr>
+<table width = "75%">
+<form action = "./myacl2.php" method = "post">
 <tr>
 <td> Create a username </td>
 <td> <input type = "text" name = "username2" size = "30" /></td>

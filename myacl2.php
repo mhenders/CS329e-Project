@@ -364,43 +364,47 @@ PAGE1;
     </div>
 
     </div>
-        <center>
-        <h2> My ACL Login </h2>
-        </center>
-        <table width = "75%">
-        <form method = "post" action = "$script">
-        <tr>
-        <td> Enter username </td>
-        <td> <input type = "text" name = "username1" size = "30" /></td>
-        </tr>
-        <tr>
-        <td> Enter password </td>
-        <td> <input type = "text" name = "password1" size = "30" /></td>
-        </tr>
-        <center>
-        <tr>
-        <td colspan='2' class='subheading'>New to MyACL? Create an account!</td>
-        </tr>
-        </center>
-        <tr>
-        <td> &nbsp; </td> <td> &nbsp; </td>
-        </tr>
-        <tr>
-        <td> Create a username </td>
-        <td> <input type = "text" name = "username2" size = "30" /></td>
-        </tr>
-        <tr>
-        <td> Create a password </td>
-        <td> <input type = "text" name = "password2" size = "30" /></td>
-        </tr>
-        <tr>
-        <td><input type = "submit" value = "Submit" /></td>
-        <td><input type = "reset" value = "Reset" /></td>
-        </tr>
-        </form>
-        </table>
-        </body>
-        </html>
+
+    <center>
+    <h2> MyACL Log In </h2>
+    </center>
+    <table width = "75%">
+    <form action = "$script" method = "post">
+    <tr>
+    <td> Enter username </td>
+    <td> <input type = "text" name = "username1" size = "30" /></td>
+    </tr>
+    <tr>
+    <td> Enter password </td>
+    <td> <input type = "text" name = "password1" size = "30" /></td>
+    </tr>
+    <tr>
+    <td><input type = "submit" value = "Submit" /></td>
+    <td><input type = "reset" value = "Reset" /></td>
+    </tr>
+    </form>
+    </table>
+    <center>
+    <h2> New to MyACL? Create an Account! </h2>
+    </center>
+    <table width = "75%">
+    <form action = "$script" method = "post">
+    <tr>
+    <td> Create a username </td>
+    <td> <input type = "text" name = "username2" size = "30" /></td>
+    </tr>
+    <tr>
+    <td> Create a password </td>
+    <td> <input type = "text" name = "password2" size = "30" /></td>
+    </tr>
+    <tr>
+    <td><input type = "submit" value = "Submit" /></td>
+    <td><input type = "reset" value = "Reset" /></td>
+    </tr>
+    </form>
+    </table>
+    </body>
+    </html>
 PG1;
     }
   }
