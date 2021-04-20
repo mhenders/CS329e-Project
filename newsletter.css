@@ -1,6 +1,6 @@
 #countDown{
   position: absolute;
-  top: 10px;
+  top: 1px;
   left: 10px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
@@ -26,16 +26,7 @@ align-items: center;
 justify-content: center;
 border: 2px solid black;
 }
-/* Makes navbar scroll with page */
-.sticky {
-position: fixed;
-top: 0;
-width: 100%;
-}
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + #desc {
-padding-top: 60px;
-}
+
 /* Style the text links inside the navigation bar */
 .NaviBar a {
 color: #f2f2f2;
@@ -68,6 +59,13 @@ background-color: #f5a4ed;
 color: black;
 }
 
+/* Right-aligned section of navigation */
+.NaviBar-right {
+float: right;
+align-items: center;
+text-align: center;
+}
+
 /* Dropdown Button */
 .dropbtn {
   background-color: #f7943e;
@@ -90,15 +88,15 @@ color: black;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content button {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 52.5px;
   text-decoration: none;
   display: block;
   float: none;
@@ -108,7 +106,7 @@ color: black;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ffe4e3;}
+.dropdown-content button:hover {background-color: #ffe4e3;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}

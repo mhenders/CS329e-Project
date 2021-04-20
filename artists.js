@@ -14,23 +14,6 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {stickyScroll()};
-
-// Get the navbar
-var navbar = document.getElementById("NaviBar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickyScroll() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 function artistPage(id){
     // Get artist name for id
     artist_name = document.getElementById(id).innerHTML
@@ -52,6 +35,24 @@ function artistPage(id){
     str = str1.concat(str4)
     getVideo(str);
 }
+
+function searchBar(artist_name){
+    document.getElementById("name").innerHTML = artist_name.toUpperCase()
+    artist_name = artist_name.toLowerCase()
+    artist_list = artist_name.split(" ")
+    str1 = (artist_list[0])
+
+    for(i = 1;i < artist_list.length;i++){
+        str2 = "+".concat(artist_list[i])
+        str1 = str1.concat(str2)
+    }
+    year = document.getElementById("year").innerHTML
+    str3 =  "+acl+"
+    str4 = str3.concat(year)
+    str = str1.concat(str4)
+    getVideo(str);
+}
+
 function getVideo(str) {
       $.ajax({
         type: 'GET',

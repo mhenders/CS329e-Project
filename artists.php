@@ -3,9 +3,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 $script = $_SERVER['PHP_SELF'];
-
-$art = explode("\n", file_get_contents('artists_18.txt'));
-
+$year = trim($_POST['year']);
+$fileYear = 'artists_' .$year. '.txt';
+$art = explode("\n", file_get_contents($fileYear));
+$art = array_map('strtoupper', $art);
 print <<<PAGE1
 <html>
 
@@ -28,32 +29,51 @@ print <<<PAGE1
   <a href="contact.html">Contact Us</a>
   </p>
 
+
   <!-- Navigation Bar -->
   <div class="NaviBar">
       
-  <!-- Left Links -->
-  <div class="dropdown">
+    <!-- Left Links -->
+   <div class="dropdown">
     <button class="dropbtn">Past Line Ups</button>
     <div class="dropdown-content">
-     <a href="artists_19.php"> 2019 </a>
-     <a href="artists_18.php"> 2018 </a>
-     <a href="artists_17.php"> 2017 </a>
-     <a href="artists_16.php"> 2016 </a>
-    </div>
-  </div>    
+     <button onclick=year(this.innerHTML)>2019</button>
+     <button onclick=year(this.innerHTML)>2018</button>
+     <button onclick=year(this.innerHTML)>2017</button>
+     <button onclick=year(this.innerHTML)>2016</button>
+   </div>
+  </div>
+
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
   
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
+   
     <!-- Centered logo -->
     <div class="NaviBar-logo">
-    <a href="ACL.html"><img id='logo' src="logo.png"></a>
+      <a href="ACL.html"><img id='logo' src="logo.png"></a>
     </div>
     
     <!-- Right Links -->
     <div class="NaviBar-right">
-      <a class = 'MyACL' href="placeholder.html">MyACL</a>
+      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
     </div>
 
    </div>
-<h2 id="year">2018</h2>
+
+<h2 id="year">$year</h2>
+<div class="search-container">
+      <input type="text" placeholder="Search.." id="search">
+      <button onclick=searchBar(document.getElementById('search').value)>Submit</button>
+  </div>
+<br><br><br>
 PAGE1;
 
 $length = count($art);
@@ -67,9 +87,11 @@ PAGE1;
 print <<<PAGE1
  <p id="name"></p>
  <h3>Video Title</h3>
- <iframe src=""></iframe>
- <p class="description">Video Description<p>
-
+ <div class = "vid">
+    <iframe src=""></iframe>
+ </div>
+ <p><b> Video Description </b></p>
+ <p class="description">Video description goes here.</p>
 
  </body>
  </html>

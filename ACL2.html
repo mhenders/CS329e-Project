@@ -24,12 +24,23 @@
   <div class="dropdown">
    <button class="dropbtn">Past Line Ups</button>
    <div class="dropdown-content">
-     <a href="artists_19.php"> 2019 </a>
-     <a href="artists_18.php"> 2018 </a>
-     <a href="artists_17.php"> 2017 </a>
-     <a href="artists_16.php"> 2016 </a>
+     <button onclick=year(this.innerHTML)>2019</button>
+     <button onclick=year(this.innerHTML)>2018</button>
+     <button onclick=year(this.innerHTML)>2017</button>
+     <button onclick=year(this.innerHTML)>2016</button>
    </div>
   </div>
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
+  
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
 
     <!-- Centered logo -->
     <div class="NaviBar-logo">
@@ -38,8 +49,12 @@
 
     <!-- Right Links -->
     <div class="NaviBar-right">
+<<<<<<< HEAD
       <a class = 'newsletter' href="newsletter.html">Newsletter</a>
       <a class = 'MyACL' href="myacl.php">MyACL</a>
+=======
+      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+>>>>>>> e8cf9ccd9896fd73a30f51762683cc4ee8692e43
     </div>
 
     </div>
@@ -49,7 +64,6 @@
     </p>
     
     <img src = "zilker.jpg" alt = "ACL ZILKER PIC">
-    <p style="font-size:8pt;"> Image Source: https://www.austintexas.org/events/acl-fest/</p>
     
     <p id = 'desc'>
     Taking place at Zilker Park in Austin, TX, ACL Festival has grown to 2 weekends, 8 stages and over 130 bands.
@@ -67,13 +81,18 @@
     Scroll to the Lineup of the year you would like to go to!
     <br>
   </p>
-  <a href="artists_19.php">
-    <div class="yearbar">2019</div>
+    
+    <div class="yearbar"><button onclick=year(this.innerHTML)>2019</button></div>
     <img src ="2019.jpg" alt = "2019 Lineup">
-  </a>
-  <a href="artists_18.php">
-    <div class="yearbar">2018</div>
+
+    <div class="yearbar"><button onclick=year(this.innerHTML)>2018</button></div>
     <img src ="2018.jpg" alt = "2018 Lineup">
-  </a>
+ 
+    <div class="yearbar"><button onclick=year(this.innerHTML)>2017</button></div>
+    <img src ="2017.jpg" alt = "2017 Lineup">
+
+    <div class="yearbar"><button onclick=year(this.innerHTML)>2016</button></div>
+    <img src ="2016.jpg" alt = "2016 Lineup">
+
 </body>
 </html>
