@@ -32,18 +32,17 @@ print <<<PAGE1
 
   <!-- Navigation Bar -->
   <div class="NaviBar">
-      
-    <!-- Left Links -->
-   <div class="dropdown">
-    <button class="dropbtn">Past Line Ups</button>
-    <div class="dropdown-content">
+
+  <!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
      <button onclick=year(this.innerHTML)>2019</button>
      <button onclick=year(this.innerHTML)>2018</button>
      <button onclick=year(this.innerHTML)>2017</button>
      <button onclick=year(this.innerHTML)>2016</button>
    </div>
   </div>
-
   <form type='hidden' method='POST' action='artists.php' name='theForm'>
     <input type='hidden' id='year' name="year" value=''>
   </form>
@@ -55,18 +54,19 @@ print <<<PAGE1
     document.theForm.submit();
   }
   </script>
-   
+
     <!-- Centered logo -->
     <div class="NaviBar-logo">
       <a href="ACL.html"><img id='logo' src="logo.png"></a>
     </div>
-    
+
     <!-- Right Links -->
     <div class="NaviBar-right">
+      <a class = 'MyACL' href="myacl.php">MyACL</a>
       <a class = 'newsletter' href="newsletter.php">Newsletter</a>
     </div>
 
-   </div>
+    </div>
 
 <h2 id="year">$year</h2>
 <div class="search-container">
