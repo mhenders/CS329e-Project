@@ -14,7 +14,7 @@ function register(){
     <meta charset="UTF-8">
     <meta name="description" content="ACL Wayback Machine">
     <meta name="author" content="Michael Holzem, Meg Henderson, Pedro Naranjo, Jibraan Siddiqi">
-    <link href="newsletter.css" rel="stylesheet">
+    <link href="ACL.css" rel="stylesheet">
     <script src="main.js"></script>
   </head>
 
@@ -27,10 +27,10 @@ function register(){
   <!-- Navigation Bar -->
   <div class="NaviBar">
 
-    <!-- Left Links -->
-   <div class="dropdown">
-    <button class="dropbtn">Past Line Ups</button>
-    <div class="dropdown-content">
+  <!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
      <button onclick=year(this.innerHTML)>2019</button>
      <button onclick=year(this.innerHTML)>2018</button>
      <button onclick=year(this.innerHTML)>2017</button>
@@ -40,7 +40,7 @@ function register(){
   <form type='hidden' method='POST' action='artists.php' name='theForm'>
     <input type='hidden' id='year' name="year" value=''>
   </form>
-
+  
   <script>
   function year(words){
     console.log(words);
@@ -56,10 +56,11 @@ function register(){
 
     <!-- Right Links -->
     <div class="NaviBar-right">
+      <a class = 'MyACL' href="myacl.php">MyACL</a>
       <a class = 'newsletter' href="newsletter.php">Newsletter</a>
     </div>
 
-  </div>
+    </div>
 
   <h1> Join our newsletter! </h1>
   <h3> Stay up to date on the latest ACL news! We will alert you festival announcements, artists' new music, and more! </h3>
@@ -95,9 +96,57 @@ function confirmPage(){
   print <<<RESULT
   <html>
   <head>
-  <title> Form Submitted </title>
+    <title>ACL Wayback Machine</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ACL Wayback Machine">
+    <meta name="author" content="Michael Holzem, Meg Henderson, Pedro Naranjo, Jibraan Siddiqi">
+    <link href="ACL.css" rel="stylesheet">
+    <script src="main.js"></script>
   </head>
-  <body>
+
+<body>
+  <div id="countDown"></div>
+  <p id = "con">
+  <a href="contact.html">Contact Us</a>
+  </p>
+
+  <!-- Navigation Bar -->
+  <div class="NaviBar">
+
+  <!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
+     <button onclick=year(this.innerHTML)>2019</button>
+     <button onclick=year(this.innerHTML)>2018</button>
+     <button onclick=year(this.innerHTML)>2017</button>
+     <button onclick=year(this.innerHTML)>2016</button>
+   </div>
+  </div>
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
+  
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
+
+    <!-- Centered logo -->
+    <div class="NaviBar-logo">
+      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+    </div>
+
+    <!-- Right Links -->
+    <div class="NaviBar-right">
+      <a class = 'MyACL' href="myacl.php">MyACL</a>
+      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+    </div>
+
+    </div>
   <h1> Thank You for Signing Up $name!</h1>
   </body>
   </html>

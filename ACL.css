@@ -54,6 +54,13 @@ color: black;
 background-color: #92cede;
 color: black;
 }
+
+/* Change the color of links on hover to blue*/
+.NaviBar a.MyACL:hover {
+    background-color: rgb(105, 204, 105);
+    color: black;
+}
+
 /* Change the color of links on hover to pink*/
 .NaviBar a.contact:hover {
 background-color: #f5a4ed;

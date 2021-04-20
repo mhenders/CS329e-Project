@@ -10,9 +10,58 @@
     print <<<PAGE1
     <html>
     <head>
+    <title>ACL Wayback Machine</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ACL Wayback Machine">
+    <meta name="author" content="Michael Holzem, Meg Henderson, Pedro Naranjo, Jibraan Siddiqi">
+    <link href="ACL.css" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+
+<body>
+  <div id="countDown"></div>
+  <p id = "con">
+  <a href="contact.html">Contact Us</a>
+  </p>
+
+  <!-- Navigation Bar -->
+  <div class="NaviBar">
+
+  <!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
+     <button onclick=year(this.innerHTML)>2019</button>
+     <button onclick=year(this.innerHTML)>2018</button>
+     <button onclick=year(this.innerHTML)>2017</button>
+     <button onclick=year(this.innerHTML)>2016</button>
+   </div>
+  </div>
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
+  
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
+
+    <!-- Centered logo -->
+    <div class="NaviBar-logo">
+      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+    </div>
+
+    <!-- Right Links -->
+    <div class="NaviBar-right">
+      <a class = 'MyACL' href="myacl.php">MyACL</a>
+      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+    </div>
+
+    </div>
     <h1> Load Schedule for User Here </h1>
-    </head>
-    <body>
     </body>
     </html>
 PAGE1;
@@ -29,7 +78,58 @@ PAGE1;
 <script>
 alert("Username already being used, please chose a different username")
 </script>
+<head>
+    <title>ACL Wayback Machine</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ACL Wayback Machine">
+    <meta name="author" content="Michael Holzem, Meg Henderson, Pedro Naranjo, Jibraan Siddiqi">
+    <link href="ACL.css" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+
 <body>
+  <div id="countDown"></div>
+  <p id = "con">
+  <a href="contact.html">Contact Us</a>
+  </p>
+
+  <!-- Navigation Bar -->
+  <div class="NaviBar">
+
+  <!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
+     <button onclick=year(this.innerHTML)>2019</button>
+     <button onclick=year(this.innerHTML)>2018</button>
+     <button onclick=year(this.innerHTML)>2017</button>
+     <button onclick=year(this.innerHTML)>2016</button>
+   </div>
+  </div>
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
+  
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
+
+    <!-- Centered logo -->
+    <div class="NaviBar-logo">
+      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+    </div>
+
+    <!-- Right Links -->
+    <div class="NaviBar-right">
+      <a class = 'MyACL' href="myacl.php">MyACL</a>
+      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+    </div>
+
+    </div>
 <center>
 <h2> Create a MyACL Account </h2>
 </center>
@@ -68,9 +168,57 @@ PG1;
         print <<<REGISTRATION_RESULT
         <html>
         <head>
-        <title> Registration Result </title>
-        </head>
-        <body>
+    <title>ACL Wayback Machine</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ACL Wayback Machine">
+    <meta name="author" content="Michael Holzem, Meg Henderson, Pedro Naranjo, Jibraan Siddiqi">
+    <link href="ACL.css" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+
+<body>
+  <div id="countDown"></div>
+  <p id = "con">
+  <a href="contact.html">Contact Us</a>
+  </p>
+
+  <!-- Navigation Bar -->
+  <div class="NaviBar">
+
+  <!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
+     <button onclick=year(this.innerHTML)>2019</button>
+     <button onclick=year(this.innerHTML)>2018</button>
+     <button onclick=year(this.innerHTML)>2017</button>
+     <button onclick=year(this.innerHTML)>2016</button>
+   </div>
+  </div>
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
+  
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
+
+    <!-- Centered logo -->
+    <div class="NaviBar-logo">
+      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+    </div>
+
+    <!-- Right Links -->
+    <div class="NaviBar-right">
+      <a class = 'MyACL' href="myacl.php">MyACL</a>
+      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+    </div>
+
+    </div>
         <h1> Thank You for Registering! </h1>
         <table width = "75%">
         <form method = "post" action = "$script">
@@ -98,9 +246,58 @@ REGISTRATION_RESULT;
             print <<<PAGE1
     <html>
     <head>
+    <title>ACL Wayback Machine</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ACL Wayback Machine">
+    <meta name="author" content="Michael Holzem, Meg Henderson, Pedro Naranjo, Jibraan Siddiqi">
+    <link href="ACL.css" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+
+<body>
+  <div id="countDown"></div>
+  <p id = "con">
+  <a href="contact.html">Contact Us</a>
+  </p>
+
+  <!-- Navigation Bar -->
+  <div class="NaviBar">
+
+  <!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
+     <button onclick=year(this.innerHTML)>2019</button>
+     <button onclick=year(this.innerHTML)>2018</button>
+     <button onclick=year(this.innerHTML)>2017</button>
+     <button onclick=year(this.innerHTML)>2016</button>
+   </div>
+  </div>
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
+  
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
+
+    <!-- Centered logo -->
+    <div class="NaviBar-logo">
+      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+    </div>
+
+    <!-- Right Links -->
+    <div class="NaviBar-right">
+      <a class = 'MyACL' href="myacl.php">MyACL</a>
+      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+    </div>
+
+    </div>
     <h1> Load Schedule for User Here </h1>
-    </head>
-    <body>
     </body>
     </html>
 PAGE1;
@@ -115,7 +312,58 @@ PAGE1;
         <script>
         alert("Unsuccessfull login, please try again or create an account")
         </script>
-        <body>
+        <head>
+    <title>ACL Wayback Machine</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ACL Wayback Machine">
+    <meta name="author" content="Michael Holzem, Meg Henderson, Pedro Naranjo, Jibraan Siddiqi">
+    <link href="ACL.css" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+
+<body>
+  <div id="countDown"></div>
+  <p id = "con">
+  <a href="contact.html">Contact Us</a>
+  </p>
+
+  <!-- Navigation Bar -->
+  <div class="NaviBar">
+
+  <!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
+     <button onclick=year(this.innerHTML)>2019</button>
+     <button onclick=year(this.innerHTML)>2018</button>
+     <button onclick=year(this.innerHTML)>2017</button>
+     <button onclick=year(this.innerHTML)>2016</button>
+   </div>
+  </div>
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
+  
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
+
+    <!-- Centered logo -->
+    <div class="NaviBar-logo">
+      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+    </div>
+
+    <!-- Right Links -->
+    <div class="NaviBar-right">
+      <a class = 'MyACL' href="myacl.php">MyACL</a>
+      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+    </div>
+
+    </div>
         <center>
         <h2> My ACL Login </h2>
         </center>
