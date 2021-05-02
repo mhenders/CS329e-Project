@@ -30,6 +30,44 @@ print <<<PG1
             </tr>
             <tr>
             <td> Noon-1pm </td>
+PG1;
+        if($a == Null){
+            $a = '';
+        }
+        if($b == Null){
+            $b = '';
+        }
+        if($c == Null){
+            $c = '';
+        }
+        if($d == Null){
+            $d = '';
+        }
+        if($e == Null){
+            $e = '';
+        }
+        if($f == Null){
+            $f = '';
+        }
+        if($g == Null){
+            $g = '';
+        }
+        if($h == Null){
+            $h = '';
+        }
+        if($i == Null){
+            $i = '';
+        }
+        if($j == Null){
+            $j = '';
+        }
+        if($k == Null){
+            $k = '';
+        }
+        if($l == Null){
+            $l = '';
+        }
+print <<<PG1
             <td> $a </td>
             </tr>
             <tr>
