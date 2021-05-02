@@ -44,7 +44,7 @@
    if($row[username] != Null && $row[password] != Null){
     echo "User and password confirmed";
     echo "<form action = \"./schedule_week1_view.php\" method = \"post\">";
-    echo "<input type=\"hidden\" id=\"custId\" value=$row>";
+    echo "<input type=\"hidden\" name = \"cust_info\"  value=$row>";
     echo "<input type = \"submit\" value = \"Take me to my schedule\" />";
     echo "</form>";
    }else if($row2[username] != Null){
@@ -56,7 +56,7 @@
 
        echo "Password changed";
        echo "<form action = \"./schedule_week1_view.php\" method = \"post\">";
-       echo "<input type=\"hidden\" id=\"custId\" value=$row2>";
+       echo "<input type=\"hidden\" name = \"cust_info\" value=$row2>";
        echo "<input type = \"submit\" value = \"Take me to my schedule\" />";
        echo "</form>";
    }else{
@@ -75,7 +75,7 @@
 
        echo "New User Registered"; 
        echo "<form action = \"./schedule_week1_view.php\" method = \"post\">";
-       echo "<input type=\"hidden\" id=\"custId\" value=$row>";
+       echo "<input type=\"hidden\" name = \"cust_info\" value=$row>";
        echo "<input type = \"submit\" value = \"Take me to my schedule\" />";
        echo "</form>";
    }
