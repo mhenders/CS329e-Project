@@ -51,7 +51,7 @@ function register(){
 
     <!-- Centered logo -->
     <div class="NaviBar-logo">
-      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+      <a href="ACL.php"><img id='logo' src="logo.png"></a>
     </div>
 
     <!-- Right Links -->
