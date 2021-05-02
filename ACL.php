@@ -20,6 +20,25 @@
   <!-- Navigation Bar -->
   <div class="NaviBar">
 
+<?php
+session_start();
+if (!isset ($_COOKIE["user"])) {
+    print <<<LOGIN
+	
+<!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
+        <a href='myacl.php'><button>2019</button></a>
+	<a href='myacl.php'><button>2018</button></a>
+	<a href='myacl.php'><button>2017</button></a>
+	<a href='myacl.php'><button>2016</button></a>
+   </div>
+  </div>
+
+LOGIN;
+} else {
+   print <<<LOGGEDIN
   <!-- Left Links -->
   <div class="dropdown">
    <button class="dropbtn">Past Line Ups</button>
@@ -42,9 +61,12 @@
   }
   </script>
 
+LOGGEDIN;
+}
+?>
     <!-- Centered logo -->
     <div class="NaviBar-logo">
-      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+      <a href="ACL.php"><img id='logo' src="logo.png"></a>
     </div>
 
     <!-- Right Links -->
