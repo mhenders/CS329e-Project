@@ -61,7 +61,7 @@
        echo "</form>";
    }else{
        //build query
-       $query = "INSERT INTO acl VALUES ('$username', '$password')";
+       $query = "INSERT INTO acl (username, password) VALUES ('$username', '$password')";
 
        //Execute query
        $result = $mysqli->query($query) or die($mysqli->error);
