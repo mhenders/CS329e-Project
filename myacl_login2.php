@@ -83,6 +83,18 @@
        //Execute query
        $result = $mysqli->query($query) or die($mysqli->error);
 
+       $a = $row2[a];
+       $b = $row2[b];
+       $c = $row2[c];
+       $d = $row2[d];
+       $e = $row2[e];
+       $f = $row2[f];
+       $g = $row2[g];
+       $h = $row2[h];
+       $i = $row2[i];
+       $j = $row2[j];
+       $k = $row2[k];
+       $l = $row2[l];
 
        echo "Password changed";
        echo "<form action = \"./schedule_week1_view.php\" method = \"post\">";
@@ -100,8 +112,8 @@
        echo "<input type=\"hidden\" name = \"j\" value=$j>";
        echo "<input type=\"hidden\" name = \"k\" value=$k>";
        echo "<input type=\"hidden\" name = \"l\" value=$l>";
-       echo "<input type = \"submit\" value = \"Take me to my schedule\" />";
-       echo "</form>";
+    echo "<input type = \"submit\" value = \"Take me to my schedule\" />";
+    echo "</form>";
    }else{
        //build query
        $query = "INSERT INTO acl (username, password) VALUES ('$username', '$password')";
