@@ -54,7 +54,7 @@
     $k = $row[k];
     $l = $row[l];
 
-    setcookie($user, $username, time() + (900), "/"); // 86400 = 1 day
+    setcookie("user", $username, time() + (900), "/"); // 86400 = 1 day
 
 
    if($row[username] != Null && $row[password] != Null){
