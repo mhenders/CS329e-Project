@@ -41,6 +41,8 @@ print <<<PAGE1
      <button id='dyear'>2018</button>
      <button id='dyear'>2017</button>
      <button id='dyear'>2016</button>
+     <button id='dyear'>2015</button>
+     <button id='dyear'>2014</button>
    </div>
   </div>
   <form type='hidden' method='POST' action='artists.php' id='theForm'>
