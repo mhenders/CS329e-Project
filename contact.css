@@ -124,9 +124,51 @@ h3 {
   color: whitesmoke;
 }
 
-.table {
+#heading {
+        font-size: 25px;
         text-align:center;
+        font-family: sans-serif;
+}
+#table {
+        font-family: sans-serif;
         margin: 0 auto;
         border: 2px solid rgb(218, 65, 19);
-        color: rgb(218, 65, 19);
+        background-color: rgb(218, 65, 19);
+        color: whitesmoke;
+        width: 35%;
+        height: 250px;
+
 }
+#t1 {
+        margin: 0 auto;
+        font-size: 20px;
+}
+
+#btn {
+        text-align:center;
+}
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pictures #img1, #img2, #img3, #img4 {
+  width: 20%;
+  margin:auto;
+  text-align: center;
+}
+
+.pictures #img1 {
+  height:100%;
+}
+
+.pictures img {
+  width: calc(100% - (20px * 2));
+  left-margin: auto;
+  right-margin:auto;
+}
+
+#questions {
+        font-size:25px;
+        color: rgb(14, 151, 128);
+        text-align: center;
