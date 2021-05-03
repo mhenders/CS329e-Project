@@ -44,7 +44,7 @@
 
      <!-- Right Links -->
      <div class="NaviBar-right">
-       <a class = 'MyACL' href="myacl.php">MyACL</a>
+       <a class = 'MyACL' href="myacl_login.php">MyACL</a>
        <a class = 'newsletter' href="newsletter.php">Newsletter</a>
      </div>
 
