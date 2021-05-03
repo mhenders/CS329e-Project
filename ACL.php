@@ -29,12 +29,12 @@ if (!isset ($_COOKIE["user"])) {
   <div class="dropdown">
    <button class="dropbtn">Past Line Ups</button>
    <div class="dropdown-content">
-        <a href='myacl.php'><button>2019</button></a>
-	<a href='myacl.php'><button>2018</button></a>
-	<a href='myacl.php'><button>2017</button></a>
-	<a href='myacl.php'><button>2016</button></a>
-	<a href='myacl.php'><button>2015</button></a>
-	<a href='myacl.php'><button>2014</button></a>
+        <a href='myacl_login.php'><button>2019</button></a>
+	<a href='myacl_login.php'><button>2018</button></a>
+	<a href='myacl_login.php'><button>2017</button></a>
+	<a href='myacl_login.php'><button>2016</button></a>
+	<a href='myacl_login.php'><button>2015</button></a>
+	<a href='myacl_login.php'><button>2014</button></a>
    </div>
   </div>
 
