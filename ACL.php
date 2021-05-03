@@ -46,7 +46,8 @@ LOGIN;
      <button onclick=year(this.innerHTML)>2019</button>
      <button onclick=year(this.innerHTML)>2018</button>
      <button onclick=year(this.innerHTML)>2017</button>
-     <button onclick=year(this.innerHTML)>2016</button>
+     <button onclick=year(this.innerHTML)>2016</button>     
+     <button onclick=year(this.innerHTML)>2015</button>
    </div>
   </div>
   <form type='hidden' method='POST' action='artists.php' name='theForm'>
@@ -111,6 +112,9 @@ LOGGEDIN;
 
     <div class="yearbar"><button onclick=year(this.innerHTML)>2016</button></div>
     <img src ="2016.jpg" alt = "2016 Lineup">
+	
+    <div class="yearbar"><button onclick=year(this.innerHTML)>2015</button></div>
+    <img src ="2015.jpg" alt = "2015 Lineup">
 
 </body>
 </html>
