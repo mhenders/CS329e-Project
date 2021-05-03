@@ -3,12 +3,13 @@
   $email = $_POST["email"];
   $comments = $_POST["comments"];
 
-  # open file 'info.txt' and append the name and e-mail address
-  if ($fh = fopen ("contact.txt", "a"))
-  {
-    fwrite ($fh, "$email  $comments \n");
-    fclose ($fh);
-  }
+
+  $file_w = fopen("contact.txt", "a");
+  $string1 = $_POST["email"] . ":";
+  fwrite($file_w, $string1);
+  $string2 = $_POST["comments"] . "\n";
+  fwrite($file_w, $string2);
+  fclose($file_w);
 
   # Write thank you page
   print <<<FORM_RESULT
