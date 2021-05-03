@@ -25,6 +25,8 @@
       <button onclick=year(this.innerHTML)>2018</button>
       <button onclick=year(this.innerHTML)>2017</button>
       <button onclick=year(this.innerHTML)>2016</button>
+      <button onclick=year(this.innerHTML)>2015</button>
+      <button onclick=year(this.innerHTML)>2014</button>
     </div>
    </div>
    <form type='hidden' method='POST' action='artists.php' name='theForm'>
@@ -34,7 +36,7 @@
 
      <!-- Centered logo -->
      <div class="NaviBar-logo">
-       <a href="ACL.html"><img id='logo' src="logo.png"></a>
+       <a href="ACL.php"><img id='logo' src="logo.png"></a>
      </div>
 
      <!-- Right Links -->

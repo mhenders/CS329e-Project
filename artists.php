@@ -26,7 +26,7 @@ print <<<PAGE1
 <body>
   <div id="countDown"></div>
   <p id = "con">
-  <a href="contact.html">Contact Us</a>
+  <a href="contact.php">Contact Us</a>
   </p>
 
 
@@ -68,7 +68,7 @@ $(document).ready(function() {
     <!-- Right Links -->
     <div class="NaviBar-right">
       <a class = 'MyACL' href="myacl.php">MyACL</a>
-      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+      
     </div>
 
     </div>

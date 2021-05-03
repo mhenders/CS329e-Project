@@ -14,7 +14,7 @@
 <body>
   <div id="countDown"></div>
   <p id = "con">
-  <a href="contact.html">Contact Us</a>
+  <a href="contact.php">Contact Us</a>
   </p>
 
   <!-- Navigation Bar -->
@@ -53,17 +53,6 @@ LOGIN;
      <button onclick=year(this.innerHTML)>2014</button>    
    </div>
   </div>
-  <form type='hidden' method='POST' action='artists.php' name='theForm'>
-    <input type='hidden' id='year' name="year" value=''>
-  </form>
-  
-  <script>
-  function year(words){
-    console.log(words);
-    document.getElementById('year').value = words;
-    document.theForm.submit();
-  }
-  </script>
 
 LOGGEDIN;
 }
@@ -85,7 +74,7 @@ LOGGEDIN;
   Welcome to the ACL Wayback Machine! Whether you are wishing to relive the magic of ACL 2015 or you couldn’t make it in 2018, this website is for you! Here, you can access previous ACL lineups and watch videos of the performances. Create an account to get quick and easy access to view your all favorite artists' ACL performances in one place! We hope this website allows you to enjoy ACL all year long!
     </p>
     <p style="text-align:center" id = "RegisterText">
-        <a class = 'newsletter' href="newsletter.php">Register Here</a>
+        <a class = 'newsletter' href="newsletter.php">Register for our Newsletter here</a>
     </p>
     <img src = "zilker.jpg" alt = "ACL ZILKER PIC">
     
@@ -123,6 +112,18 @@ LOGGEDIN;
  
     <div class="yearbar"><button onclick=year(this.innerHTML)>2014</button></div>
     <img src ="2014.jpg" alt = "2014 Lineup">
+	
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
+  
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
 
 </body>
 </html>
