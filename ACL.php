@@ -53,17 +53,6 @@ LOGIN;
      <button onclick=year(this.innerHTML)>2014</button>    
    </div>
   </div>
-  <form type='hidden' method='POST' action='artists.php' name='theForm'>
-    <input type='hidden' id='year' name="year" value=''>
-  </form>
-  
-  <script>
-  function year(words){
-    console.log(words);
-    document.getElementById('year').value = words;
-    document.theForm.submit();
-  }
-  </script>
 
 LOGGEDIN;
 }
@@ -127,6 +116,18 @@ LOGGEDIN;
  
     <div class="yearbar"><button onclick=year(this.innerHTML)>2014</button></div>
     <img src ="2014.jpg" alt = "2014 Lineup">
+	
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
+  
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
 
 </body>
 </html>
