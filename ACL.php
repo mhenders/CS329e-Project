@@ -80,7 +80,7 @@ LOGGEDIN;
     </div>
     <p id = 'desc'>
 
-  Welcome to the ACL Wayback Machine! Whether you are wishing to relive the magic of ACL 2010 or you couldn’t make it in 2013, this website is for you! Here, you can access the previous ACL lineups and watch videos of the performances.  Create an account to view all of your favorited artists in one place. Check out the Bites &amp; Booze tab for Austin’s hottest restaurants and bars. We hope you enjoy ACL all year long!
+  Welcome to the ACL Wayback Machine! Whether you are wishing to relive the magic of ACL 2015 or you couldn’t make it in 2018, this website is for you! Here, you can access previous ACL lineups and watch videos of the performances. Create an account to get quick and easy access to view your all favorite artists' ACL performances in one place! We hope this website allows you to enjoy ACL all year long!
     </p>
     
     <img src = "zilker.jpg" alt = "ACL ZILKER PIC">
