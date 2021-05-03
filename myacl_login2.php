@@ -54,6 +54,9 @@
     $k = $row[k];
     $l = $row[l];
 
+    setcookie($user, $username, time() + (900), "/"); // 86400 = 1 day
+
+
    if($row[username] != Null && $row[password] != Null){
     echo "User and password confirmed";
     echo "<form action = \"./schedule_week1_view.php\" method = \"post\">";
