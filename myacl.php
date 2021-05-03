@@ -29,6 +29,8 @@ print <<<PAGE1
      <button onclick=year(this.innerHTML)>2018</button>
      <button onclick=year(this.innerHTML)>2017</button>
      <button onclick=year(this.innerHTML)>2016</button>
+     <button onclick=year(this.innerHTML)>2015</button>
+     <button onclick=year(this.innerHTML)>2014</button>
    </div>
   </div>
   <form type='hidden' method='POST' action='artists.php' name='theForm'>
@@ -51,7 +53,6 @@ print <<<PAGE1
     <!-- Right Links -->
     <div class="NaviBar-right">
       <a class = 'MyACL' href="myacl.php">MyACL</a>
-      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
     </div>
 
     </div>
