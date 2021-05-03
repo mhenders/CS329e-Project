@@ -60,11 +60,11 @@
         <a href="ACL.php"><img id='logo' src="logo.png"></a>
       </div>
 
-      <!-- Right Links -->
+       <!-- Right Links -->
       <div class="NaviBar-right">
-        <a class = 'MyACL' href="myacl.php">MyACL</a>
-        <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+        <a class = 'MyACL' href="myacl_login.php">MyACL</a>
       </div>
+
   </div>
   <br><br>
   <h3> Thank You for Your Input
