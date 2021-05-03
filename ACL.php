@@ -78,7 +78,7 @@ LOGGEDIN;
   Welcome to the ACL Wayback Machine! Whether you are wishing to relive the magic of ACL 2015 or you couldn’t make it in 2018, this website is for you! Here, you can access previous ACL lineups and watch videos of the performances. Create an account to get quick and easy access to view your all favorite artists' ACL performances in one place! We hope this website allows you to enjoy ACL all year long!
     </p>
     <p style="text-align:center" id = "RegisterText">
-        <a class = 'newsletter' href="newsletter.php">Register Here</a>
+        <a class = 'newsletter' href="newsletter.php">Register for our Newsletter here</a>
     </p>
     <img src = "zilker.jpg" alt = "ACL ZILKER PIC">
     
