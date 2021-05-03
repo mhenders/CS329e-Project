@@ -78,7 +78,7 @@ print <<<PAGE1
 <body>
   <div id="countDown"></div>
   <p id = "con">
-  <a href="contact.html">Contact Us</a>
+  <a href="contact.php">Contact Us</a>
   </p>
 
   <!-- Navigation Bar -->
