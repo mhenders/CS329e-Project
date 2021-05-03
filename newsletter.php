@@ -20,35 +20,66 @@
  <!-- Navigation Bar -->
  <div class="NaviBar">
 
-   <!-- Left Links -->
-   <div class="dropdown">
-    <button class="dropbtn">Past Line Ups</button>
-    <div class="dropdown-content">
-      <button onclick=year(this.innerHTML)>2019</button>
-      <button onclick=year(this.innerHTML)>2018</button>
-      <button onclick=year(this.innerHTML)>2017</button>
-      <button onclick=year(this.innerHTML)>2016</button>
-      <button onclick=year(this.innerHTML)>2015</button>
-      <button onclick=year(this.innerHTML)>2014</button>
-    </div>
+<?php
+session_start();
+if (!isset ($_COOKIE["user"])) {
+    print <<<LOGIN
+	
+<!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
+        <a href='myacl_login.php'><button>2019</button></a>
+	<a href='myacl_login.php'><button>2018</button></a>
+	<a href='myacl_login.php'><button>2017</button></a>
+	<a href='myacl_login.php'><button>2016</button></a>
+	<a href='myacl_login.php'><button>2015</button></a>
+	<a href='myacl_login.php'><button>2014</button></a>
    </div>
-   <form type='hidden' method='POST' action='artists.php' name='theForm'>
-     <input type='hidden' id='year' name="year" value=''>
-   </form>
-   
+  </div>
 
-     <!-- Centered logo -->
-     <div class="NaviBar-logo">
-       <a href="ACL.php"><img id='logo' src="logo.png"></a>
-     </div>
+LOGIN;
+} else {
+   print <<<LOGGEDIN
+  <!-- Left Links -->
+  <div class="dropdown">
+   <button class="dropbtn">Past Line Ups</button>
+   <div class="dropdown-content">
+     <button onclick=year(this.innerHTML)>2019</button>
+     <button onclick=year(this.innerHTML)>2018</button>
+     <button onclick=year(this.innerHTML)>2017</button>
+     <button onclick=year(this.innerHTML)>2016</button>     
+     <button onclick=year(this.innerHTML)>2015</button>
+     <button onclick=year(this.innerHTML)>2014</button>    
+   </div>
+  </div>
+  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+    <input type='hidden' id='year' name="year" value=''>
+  </form>
+  
+  <script>
+  function year(words){
+    console.log(words);
+    document.getElementById('year').value = words;
+    document.theForm.submit();
+  }
+  </script>
 
-     <!-- Right Links -->
-     <div class="NaviBar-right">
-       <a class = 'MyACL' href="myacl_login.php">MyACL</a>
-       <a class = 'newsletter' href="newsletter.php">Newsletter</a>
-     </div>
+LOGGEDIN;
+}
+?>
+    <!-- Centered logo -->
+    <div class="NaviBar-logo">
+      <a href="ACL.php"><img id='logo' src="logo.png"></a>
+    </div>
 
-     </div>
+    <!-- Right Links -->
+    <div class="NaviBar-right">
+      <a class = 'MyACL' href="myacl_login.php">MyACL</a>
+      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
+    </div>
+
+    </div>
       
       <script language = "javascript" type = "text/javascript">
 
