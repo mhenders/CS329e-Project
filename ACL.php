@@ -34,6 +34,7 @@ if (!isset ($_COOKIE["user"])) {
 	<a href='myacl.php'><button>2017</button></a>
 	<a href='myacl.php'><button>2016</button></a>
 	<a href='myacl.php'><button>2015</button></a>
+	<a href='myacl.php'><button>2014</button></a>
    </div>
   </div>
 
@@ -49,6 +50,7 @@ LOGIN;
      <button onclick=year(this.innerHTML)>2017</button>
      <button onclick=year(this.innerHTML)>2016</button>     
      <button onclick=year(this.innerHTML)>2015</button>
+     <button onclick=year(this.innerHTML)>2014</button>    
    </div>
   </div>
   <form type='hidden' method='POST' action='artists.php' name='theForm'>
@@ -117,6 +119,9 @@ LOGGEDIN;
 	
     <div class="yearbar"><button onclick=year(this.innerHTML)>2015</button></div>
     <img src ="2015.jpg" alt = "2015 Lineup">
+ 
+    <div class="yearbar"><button onclick=year(this.innerHTML)>2014</button></div>
+    <img src ="2014.jpg" alt = "2014 Lineup">
 
 </body>
 </html>
