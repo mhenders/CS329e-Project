@@ -36,28 +36,33 @@ print <<<PAGE1
   <!-- Left Links -->
   <div class="dropdown">
    <button class="dropbtn">Past Line Ups</button>
-   <div class="dropdown-content">
-     <button onclick=year(this.innerHTML)>2019</button>
-     <button onclick=year(this.innerHTML)>2018</button>
-     <button onclick=year(this.innerHTML)>2017</button>
-     <button onclick=year(this.innerHTML)>2016</button>
+  <div class="dropdown-content">
+     <button id='dyear'>2019</button>
+     <button id='dyear'>2018</button>
+     <button id='dyear'>2017</button>
+     <button id='dyear'>2016</button>
+     <button id='dyear'>2015</button>
+     <button id='dyear'>2014</button>
    </div>
   </div>
-  <form type='hidden' method='POST' action='artists.php' name='theForm'>
+  <form type='hidden' method='POST' action='artists.php' id='theForm'>
     <input type='hidden' id='year' name="year" value=''>
   </form>
-  
   <script>
-  function year(words){
-    console.log(words);
-    document.getElementById('year').value = words;
-    document.theForm.submit();
-  }
-  </script>
+  
+$(document).ready(function() {
+    $(document).on('click', '#dyear', function() {
+    $('#year').val($(this).html());
+    console.log($('#year').val());
+    $("#theForm").submit();
+    });
+});
+</script>
+
 
     <!-- Centered logo -->
     <div class="NaviBar-logo">
-      <a href="ACL.html"><img id='logo' src="logo.png"></a>
+      <a href="ACL.php"><img id='logo' src="logo.png"></a>
     </div>
 
     <!-- Right Links -->

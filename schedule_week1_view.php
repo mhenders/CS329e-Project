@@ -1,26 +1,39 @@
 <?php
-$script = $_SERVER['PHP_SELF'];
 # get the incoming information
-$cust_info = $_POST["cust_info"];
-$a = $cust_info[a];
-$b = $cust_info[b];
-$c = $cust_info[c];
-$d = $cust_info[d];
-$e = $cust_info[e];
-$f = $cust_info[f];
-$g = $cust_info[g];
-$h = $cust_info[h];
-$i = $cust_info[i];
-$j = $cust_info[j];
-$k = $cust_info[k];
-$l = $cust_info[l];
+$username = $_POST["username"];
+$password = $_POST["password"];
+$a = $_POST["a"];
+$b = $_POST["b"];
+$c = $_POST["c"];
+$d = $_POST["d"];
+$e = $_POST["e"];
+$f = $_POST["f"];
+$g = $_POST["g"];
+$h = $_POST["h"];
+$i = $_POST["i"];
+$j = $_POST["j"];
+$k = $_POST["k"];
+$l = $_POST["l"];
 
 print <<<PG1
 <html>
     <body>
     <table width = "75%">
         <form action = "./schedule_week1_edit.php" method = "post">
-            <input type="hidden" name = "cust_info" value=$cust_info>
+            <input type="hidden" name = "a" value=$a>
+            <input type="hidden" name = "b" value=$b>
+            <input type="hidden" name = "c" value=$c>
+            <input type="hidden" name = "d" value=$d>
+            <input type="hidden" name = "e" value=$e>
+            <input type="hidden" name = "f" value=$f>
+            <input type="hidden" name = "g" value=$g>
+            <input type="hidden" name = "h" value=$h>
+            <input type="hidden" name = "i" value=$i>
+            <input type="hidden" name = "j" value=$j>
+            <input type="hidden" name = "k" value=$k>
+            <input type="hidden" name = "l" value=$l>
+            <input type="hidden" name = "username" value=$username>
+            <input type="hidden" name = "password" value=$password>
             <center>
             <h2> My Schedule for ACL Weekend 1 </h2>
             </center>

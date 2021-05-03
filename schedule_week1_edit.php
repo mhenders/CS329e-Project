@@ -5,8 +5,8 @@
 <head>
   <title>AJAX demo</title>
   <meta charset="UTF-8">
-  <meta name="description" content="AJAX Edit">
-  <meta name="author" content="Pedro Naranjo">
+  <meta id="description" content="AJAX Edit">
+  <meta id="author" content="Pedro Naranjo">
 </head> 
 
    <body>
@@ -15,7 +15,7 @@
 
 
             //Browser Support Code
-            function ajaxFunction(server,user,pwd,dbName){
+            function ajaxFunction(server,user,pwd,dbname){
                var ajaxRequest;  // The variable that makes Ajax possible!
                
                ajaxRequest = new XMLHttpRequest();
@@ -48,7 +48,7 @@
                var l = document.getElementById('l').value;
                var queryString = "?password=" + password ;
             
-               queryString +=  "&username=" + username + "&server=" + server + "&user=" + user + "&pwd=" + pwd + "&dbName=" + dbName;
+               queryString +=  "&username=" + username + "&server=" + server + "&user=" + user + "&pwd=" + pwd + "&dbname=" + dbname;
                queryString +=  "&a=" + a + "&b=" + b + "&c=" + c + "&d=" + d + "&e=" + e + "&f=" + f;
                queryString +=  "&h=" + h + "&i=" + i + "&j=" + j + "&k=" + k + "&l=" + l + "&g=" + g;
                
@@ -60,7 +60,7 @@
 
 
 		
-        <form method = "POST" name = 'myForm'>
+        <form method = "POST" id = 'myForm2'>
 
       	<h1> Edit My Schedule for ACL Weekend 1 </h1>
 
@@ -69,94 +69,46 @@
           $server = "spring-2021.cs.utexas.edu";
           $user   = "cs329e_bulko_naranjop";
           $pwd    = "Bumpy9Send!add";
-          $dbName = "cs329e_bulko_naranjop";
+          $dbname = "cs329e_bulko_naranjop";
 
           $script = $_SERVER['PHP_SELF'];
             # get the incoming information
-            $cust_info = $_POST["cust_info"];
+            $username = $_POST["username"];
+            $password = $_POST["password"];
+            $a = $_POST["a"];
+            $b = $_POST["b"];
+            $c = $_POST["c"];
+            $d = $_POST["d"];
+            $e = $_POST["e"];
+            $f = $_POST["f"];
+            $g = $_POST["g"];
+            $h = $_POST["h"];
+            $i = $_POST["i"];
+            $j = $_POST["j"];
+            $k = $_POST["k"];
+            $l = $_POST["l"];
 
-            $username = $cust_info["username"];
-            $password = $cust_info["password"];
+            echo"<table><input type=\"hidden\" id = \"username\" value=$username>";
+            echo "<input type=\"hidden\" id = \"password\" value=$password>";
+            echo "<tr><td> Time </td><td> Artist </td></tr>";
+            echo "<tr><td> Noon-1pm </td><td><input type=\"text\" id = \"a\" value=$a></td></tr>";
+            echo "<tr><td> 1pm-2pm </td><td><input type=\"text\" id = \"b\" value=$b></td></tr>";
+            echo "<tr><td> 2pm-3pm </td><td><input type=\"text\" id = \"c\" value=$c></td></tr>";
+            echo "<tr><td> 3pm-4pm </td><td><input type=\"text\" id = \"d\" value=$d></td></tr>";
+            echo "<tr><td> 4pm-5pm </td><td><input type=\"text\" id = \"e\" value=$e></td></tr>";
+            echo "<tr><td> 5pm-6pm </td><td><input type=\"text\" id = \"f\" value=$f></td></tr>";
+            echo "<tr><td> 6pm-7pm </td><td><input type=\"text\" id = \"g\" value=$g></td></tr>";
+            echo "<tr><td> 7pm-8pm </td><td><input type=\"text\" id = \"h\" value=$h></td></tr>";
+            echo "<tr><td> 8pm-9pm </td><td><input type=\"text\" id = \"i\" value=$i></td></tr>";
+            echo "<tr><td> 9pm-10pm </td><td><input type=\"text\" id = \"j\" value=$j></td></tr>";
+            echo "<tr><td> 10pm-11pm </td><td><input type=\"text\" id = \"k\" value=$k></td></tr>";
+            echo "<tr><td> 11pm-Midnight </td><td><input type=\"text\" id = \"l\" value=$l></td></tr>";
+            echo "<input type = \"button\" onclick = \"ajaxFunction('$server','$user','$pwd','$dbname')\" value = \"Submit\"/> <br><br> ";
+            echo "</table></form>";
 
-
-            $a = $cust_info[a];
-            $b = $cust_info[b];
-            $c = $cust_info[c];
-            $d = $cust_info[d];
-            $e = $cust_info[e];
-            $f = $cust_info[f];
-            $g = $cust_info[g];
-            $h = $cust_info[h];
-            $i = $cust_info[i];
-            $j = $cust_info[j];
-            $k = $cust_info[k];
-            $l = $cust_info[l];
-
-            print <<<PG1
-                <table width = "75%">
-                    <input type="hidden" name = "username" value=$username>
-                    <input type="hidden" name = "password" value=$password>
-                        <center>
-                        <h2> My Schedule for ACL Weekend 1 </h2>
-                        </center>
-                        <tr>
-                        <td> Time </td>
-                        <td> Artist </td>
-                        </tr>
-                        <tr>
-                        <td> Noon-1pm </td>
-                        <td> <input type = "text" id = "a" size = "30" /> $a</td>
-                        </tr>
-                        <tr>
-                        <td> 1pm-2pm </td>
-                        <td> <input type = "text" id = "b" size = "30" /> $b</td>
-                        </tr>
-                        <tr>
-                        <td> 2pm-3pm </td>
-                        <td> <input type = "text" id = "c" size = "30" /> $c</td>
-                        </tr>
-                        <tr>
-                        <td> 3pm-4pm </td>
-                        <td> <input type = "text" id = "d" size = "30" /> $d</td>
-                        </tr>
-                        <tr>
-                        <td> 4pm-5pm </td>
-                        <td> <input type = "text" id = "e" size = "30" /> $e</td>
-                        </tr>
-                        <tr>
-                        <td> 5pm-6pm </td>
-                        <td> <input type = "text" id = "f" size = "30" /> $f</td>
-                        </tr>
-                        <tr>
-                        <td> 6pm-7pm </td>
-                        <td> <input type = "text" id = "g" size = "30" /> $g</td>
-                        </tr>
-                        <tr>
-                        <td> 7pm-8pm </td>
-                        <td> <input type = "text" id = "h" size = "30" /> $h</td>
-                        </tr>
-                        <tr>
-                        <td> 8pm-9pm </td>
-                        <td> <input type = "text" id = "i" size = "30" /> $i</td>
-                        </tr>
-                        <tr>
-                        <td> 9pm-10pm </td>
-                        <td> <input type = "text" id = "j" size = "30" /> $j</td>
-                        </tr>
-                        <tr>
-                        <td> 10pm-11pm </td>
-                        <td> <input type = "text" id = "k" size = "30" /> $k</td>
-                        </tr>
-                        <tr>
-                        <td> 11pm-Midnight </td>
-                        <td> <input type = "text" id = "l" size = "30" /> $l</td>
-                        </tr>
-
-                        <input type = "button" onclick = "ajaxFunction('$server','$user','$pwd','$dbName')" value = "Submit"/>
-                    </table>
-                </form>
-                </body>
-            </html>
-PG1;
 
         ?>
+
+    <div id = 'ajaxDiv'></div>
+                </body>
+            </html>
