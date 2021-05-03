@@ -66,7 +66,6 @@ LOGGEDIN;
     <div class="NaviBar-right">
 <<<<<<< HEAD:ACL.html
       <a class = 'MyACL' href="myacl_login.php">MyACL</a>
-      <a class = 'newsletter' href="newsletter.php">Newsletter</a>
 =======
       <a class = 'MyACL' href="myacl.php">MyACL</a>
 >>>>>>> 4303a16f10364082f34d26a34a6dd25c721dec15:ACL.php
