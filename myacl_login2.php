@@ -77,43 +77,10 @@
     echo "<input type = \"submit\" value = \"Take me to my schedule\" />";
     echo "</form>";
    }else if($row2[username] != Null){
-       //build query
-       $query = "UPDATE acl SET password = '$password' WHERE username = '$username'";
-
-       //Execute query
-       $result = $mysqli->query($query) or die($mysqli->error);
-
-       $a = $row2[a];
-       $b = $row2[b];
-       $c = $row2[c];
-       $d = $row2[d];
-       $e = $row2[e];
-       $f = $row2[f];
-       $g = $row2[g];
-       $h = $row2[h];
-       $i = $row2[i];
-       $j = $row2[j];
-       $k = $row2[k];
-       $l = $row2[l];
-
-       echo "Password changed";
-       echo "<form action = \"./schedule_week1_view.php\" method = \"post\">";
-       echo "<input type=\"hidden\" name = \"username\" value=$username>";
-       echo "<input type=\"hidden\" name = \"password\" value=$password>";
-       echo "<input type=\"hidden\" name = \"a\" value=$a>";
-       echo "<input type=\"hidden\" name = \"b\" value=$b>";
-       echo "<input type=\"hidden\" name = \"c\" value=$c>";
-       echo "<input type=\"hidden\" name = \"d\" value=$d>";
-       echo "<input type=\"hidden\" name = \"e\" value=$e>";
-       echo "<input type=\"hidden\" name = \"f\" value=$f>";
-       echo "<input type=\"hidden\" name = \"g\" value=$g>";
-       echo "<input type=\"hidden\" name = \"h\" value=$h>";
-       echo "<input type=\"hidden\" name = \"i\" value=$i>";
-       echo "<input type=\"hidden\" name = \"j\" value=$j>";
-       echo "<input type=\"hidden\" name = \"k\" value=$k>";
-       echo "<input type=\"hidden\" name = \"l\" value=$l>";
-    echo "<input type = \"submit\" value = \"Take me to my schedule\" />";
-    echo "</form>";
+       echo "Incorrect password, please try again or create an account";
+       echo "<form action = \".myacl_login.php\" method = \"post\">";
+       echo "<input type = \"submit\" value = \"Okay\" />";
+       echo "</form>";
    }else{
        //build query
        $query = "INSERT INTO acl (username, password) VALUES ('$username', '$password')";
