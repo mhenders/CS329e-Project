@@ -94,6 +94,34 @@ LOGGEDIN;
     <br>
   </p>
     
+<?php
+session_start();
+if (!isset ($_COOKIE["user"])) {
+    print <<<LOGIN2
+
+    <div class="yearbar"><a href='myacl_login.php'><button>2019</button></a></div>
+    <img src ="2019.jpg" alt = "2019 Lineup">
+
+    <div class="yearbar"><a href='myacl_login.php'><button>2018</button></a></div>
+    <img src ="2018.jpg" alt = "2018 Lineup">
+ 
+    <div class="yearbar"><a href='myacl_login.php'><button>2017</button></a></div>
+    <img src ="2017.jpg" alt = "2017 Lineup">
+
+    <div class="yearbar"><a href='myacl_login.php'><button>2016</button></a></div>
+    <img src ="2016.jpg" alt = "2016 Lineup">
+	
+    <div class="yearbar"><a href='myacl_login.php'><button>2015</button></a></div>
+    <img src ="2015.jpg" alt = "2015 Lineup">
+ 
+    <div class="yearbar"><a href='myacl_login.php'><button>2014</button></a></div>
+    <img src ="2014.jpg" alt = "2014 Lineup">
+LOGIN2;
+
+} else {
+
+print <<<LOGGEDIN2
+    
     <div class="yearbar"><button onclick=year(this.innerHTML)>2019</button></div>
     <img src ="2019.jpg" alt = "2019 Lineup">
 
@@ -111,6 +139,10 @@ LOGGEDIN;
  
     <div class="yearbar"><button onclick=year(this.innerHTML)>2014</button></div>
     <img src ="2014.jpg" alt = "2014 Lineup">
+
+LOGGEDIN2;
+}
+?>
 	
   <form type='hidden' method='POST' action='artists.php' name='theForm'>
     <input type='hidden' id='year' name="year" value=''>
