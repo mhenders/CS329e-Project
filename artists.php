@@ -68,7 +68,6 @@ $(document).ready(function() {
     <!-- Right Links -->
     <div class="NaviBar-right">
       <a class = 'MyACL' href="myacl_login.php">MyACL</a>
-      <a class = 'MyACL' href="newsletter.php">MyACL</a>
       
     </div>
 
