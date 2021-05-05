@@ -78,7 +78,7 @@
     echo "</form>";
    }else if($row2[username] != Null){
        echo "Incorrect password, please try again or create an account";
-       echo "<form action = \".myacl_login.php\" method = \"post\">";
+       echo "<form action = \"myacl_login.php\" method = \"post\">";
        echo "<input type = \"submit\" value = \"Okay\" />";
        echo "</form>";
    }else{
