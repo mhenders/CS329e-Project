@@ -98,27 +98,63 @@
    <br>
 
    <div id = "table">
-    <p class = "cont2">
     <table id = "t1">
-            <p id = "heading">Contact Us:</p>
-    <form action = "./contact.php" method = "post">
+    <p id = "heading">Contact Us:</p>
+    <form action = "./contact.php" method = "post" name = "frmContact" id = "frmContact" onsubmit="return validateContactForm()">
     <tr>
-    <td> Email: </td>
-    <td> <input type = "text" name = "email" size = "42" /></td>
+            <td> Email: </td>
+            <td> <input type = "text" class = "input-field"name = "userEmail" size = "42" id = "userEmail" /> <br>
+            <span id = "userEmail-span" class = "span"></td>
     </tr>
     <tr>
-    <td> Feedback: </td>
-    <td> <textarea name = "comments" rows = "4" cols = "36" placeholder= "How can we improve?"> </textarea></td>
+            <td> Feedback: </td>
+            <td> <textarea name = "comments" class = "input-field" rows = "4" cols = "36" id = "comments"></textarea> <br><span id = "userComments-span" class = "span"></span></td>
     </tr>
     <tr>
     <td></td>
-    <td><input type = "submit" value = "Submit" id = "btn"/>
+    <td><input type = "submit" value = "Submit" name = "send" id = "btn"/>
     <input type = "reset" value = "Reset" id = "btn"/></td>
     </tr>
     </form>
     </table>
     </p>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        function validateContactForm() {
+            var valid = true;
 
-</body>
+            $(".span").html("");
+            $(".input-field").css('border', '#e0dfdf 1px solid');
+            var email = $("#userEmail").val();
+            var comments = $("#comments").val();
+            
+            if (email == "") {
+                $("#userEmail-span").css('font-size', '12px');    
+                $("#userEmail-span").html("Required.");
+                $("#userEmail").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (!email.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
+            {
+                $("#userEmail-span").css('font-size', '12px');
+                $("#userEmail-span").html("Invalid Email Address.");
+                $("#userEmail").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (comments == "") {
+                $("#userComments-span").css('font-size', '12px');
+                $("#userComments-span").html("Required.");
+                $("#comments").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            return valid;
+       }
+    </script>
 
-</html>
+
+    </body>
+
+    </html>
+                                                                                                           157,5         Bot
+
