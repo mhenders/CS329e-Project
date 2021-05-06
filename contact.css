@@ -15,29 +15,6 @@ h2{
   width:1200px;
 }
 
-.cont{
-  background-color:rgb(14, 151, 128);
-  color:whitesmoke;
-  width: 300px;
-  height: 200px;
-  text-align: center;
-  font-family: Arial;
-  font-size:20px;
-}
-.cont2{
-  background-color:rgb(14, 151, 128);
-  color:whitesmoke;
-  text-align: center;
-  font-family: Arial;
-  font-size:20px;
-}
-
-#call{
-  float:right;
-  margin: 100px;
-}
-
-
 
 #under{
   text-decoration: underline;
@@ -54,16 +31,6 @@ h3 {
   width:1200px;
 }
 
-.cont{
-  background-color:rgb(14, 151, 128);
-  color:whitesmoke;
-  width: 300px;
-  height: 200px;
-  text-align: center;
-  font-family: Arial;
-  font-size:20px;
-  margin: 0 auto;
-}
 
 #email{
   text-align: center;
@@ -119,11 +86,6 @@ h3 {
 .dropdown:hover .dropbtn {background-color: #f75a52;color: black;}
 
 
-#under{
-  text-decoration: underline;
-  color: whitesmoke;
-}
-
 #heading {
         font-size: 25px;
         text-align:center;
@@ -172,3 +134,4 @@ h3 {
         font-size:25px;
         color: rgb(14, 151, 128);
         text-align: center;
+}
