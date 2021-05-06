@@ -58,7 +58,7 @@
 
 
    if($row[username] != Null && $row[password] != Null){
-    echo "User and password confirmed";
+    echo "Successfully logged in";
     echo "<form action = \"./schedule_week1_view.php\" method = \"post\">";
     echo "<input type=\"hidden\" name = \"username\" value=$username>";
        echo "<input type=\"hidden\" name = \"password\" value=$password>";
@@ -77,7 +77,7 @@
     echo "<input type = \"submit\" value = \"Take me to my schedule\" />";
     echo "</form>";
    }else if($row2[username] != Null){
-       echo "Incorrect password, please try again or create an account";
+       echo "This username is already being used with a different password. Please chose a diferent username or try again";
        echo "<form action = \"myacl_login.php\" method = \"post\">";
        echo "<input type = \"submit\" value = \"Okay\" />";
        echo "</form>";

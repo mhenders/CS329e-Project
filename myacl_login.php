@@ -122,7 +122,7 @@ LOGGEDIN;
 		
       <form method = "POST" name = 'myForm'>
 
-      	<h1> Login to MyACL </h1>
+      	<h1> Login to MyACL or Create an Account! </h1>
 
         <?php
    
