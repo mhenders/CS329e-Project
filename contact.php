@@ -123,7 +123,7 @@ LOGGEDIN;
 
    <div id = "table">
     <table id = "t1">
-    <p id = "heading">Contact Us:</p>
+    <p id = "heading">Contact Us</p>
     <form action = "./contact.php" method = "post" name = "frmContact" id = "frmContact" onsubmit="return validateContactForm()">
     <tr>
             <td> Email: </td>
