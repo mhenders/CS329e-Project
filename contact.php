@@ -94,7 +94,7 @@ LOGGEDIN;
   <br><br>
   <h3> Thank You for Your Input
   <br>
-  Click <a href = "ACL.html"> here </a> to return to the home page!</h3>
+  Click <a href = "ACL.php"> here </a> to return to the home page!</h3>
   </body>
   </html>
 FORM_RESULT;
