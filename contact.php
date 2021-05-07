@@ -180,5 +180,3 @@ LOGGEDIN;
     </body>
 
     </html>
-                                                                                                           157,5         Bot
-
